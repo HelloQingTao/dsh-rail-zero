@@ -1,0 +1,4 @@
+# dsh-rail-zero bundle patch: one host row over the web profile.
+- insert:
+    - id: dsh-rail-zero
+      name: dsh-rail-zero

@@ -1,0 +1,57 @@
+{
+  "name": "dsh-rail-zero",
+  "version": "0.1.0",
+  "description": "DSH web plugin: zero the collapsed left sidebar's 56px rail and get a working expand control - prefers dsh-qol's hamburger, falls back to the official toggle, then to a tiny floating button.",
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "sidebar",
+    "ui",
+    "layout",
+    "collapse",
+    "rail",
+    "qol"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HelloQingTao/dsh-rail-zero.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HelloQingTao/dsh-rail-zero/issues"
+  },
+  "homepage": "https://github.com/HelloQingTao/dsh-rail-zero#readme",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.0-rc.1": "compatible",
+        "0.2.0-rc.2": "compatible"
+      }
+    }
+  }
+}
