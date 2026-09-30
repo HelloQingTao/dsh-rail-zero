@@ -36,6 +36,7 @@ Only macOS (or desktop shells with a custom titlebar) collapse the sidebar to ze
 ### Install
 
 ```bash
+# via npm registry (recommended):
 dsh plugin --profile web add dsh-rail-zero
 # or straight from GitHub:
 dsh plugin --profile web add github:HelloQingTao/dsh-rail-zero
